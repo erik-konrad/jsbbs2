@@ -1,0 +1,11 @@
+Willkommen im Illusionforge BBS. 
+
+Dies ist eine MOTD (auch Nachricht des
+Tages genannt). Aktuell nur als Platz-
+halter eingefuegt.
+
+Wenn du neu bist und nicht weiter 
+weisst, gib HELP ein.
+
+Viel Spass beim stoebern, wuenscht dein
+SysOp Astolas

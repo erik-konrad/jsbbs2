@@ -1,0 +1,10 @@
+############### Hilfe #################
+#                                     #
+# verfuegbare Befehle:                #
+# PAGES - zeigt alle Seiten           #
+# MESSAGES - Message Board            #
+# DOWNLOADS - Download Sektion(WIP)   #
+# HELP - zeigt diese Seite            #
+# EXIT - beendet die Verbindung       #
+#                                     #
+#######################################

@@ -1,0 +1,21 @@
+{
+  "name": "jsbbs2",
+  "version": "0.0.1",
+  "description": "a PETSCII BBS server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-db": "npx directus start"
+  },
+  "author": "Erik Konrad",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "directus": "^9.10.0",
+    "dotenv": "^16.0.1",
+    "net": "^1.0.2",
+    "petscii": "^1.0.0",
+    "sqlite3": "^5.0.8"
+  }
+}
