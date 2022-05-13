@@ -37,6 +37,19 @@ function getFileData(fileName, parsed = false) {
     }
 }
 
+const getDirectory = (path) => {
+    let directory = fs.readdirSync(path);
+    return directory;
+}
+exports.getDirectory = getDirectory;
+
+const getFoldersFromDirectory = (path) => {
+    return getDirectory(path).filter(function (file) {
+        return fs.statSync(path + '/' + file).isDirectory();
+    });
+}
+exports.getFoldersFromDirectory = getFoldersFromDirectory
+
 const exists = function (fileName) {
     return fs.existsSync(fileName)
 }

@@ -15,7 +15,7 @@ server.on('connection', (socket) => {
     socket.bbsMode = 'main';
 
     socket.pages = {
-        path: ''
+        path: 'pages'
     }
 
     console.log(`new connection from ${socket.remoteAddress}:${socket.remotePort}`);
