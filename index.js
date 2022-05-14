@@ -27,6 +27,11 @@ server.on('connection', (socket) => {
         bbs.main(socket, data);
     });
 
+    socket.on('error', (err) => {
+        console.log('an error occured:');
+        console.log(err);
+    })
+
     socket.on('close', () => {
         console.log(`connection closed from ${socket.remoteAddress}:${socket.remotePort}`);
     });
