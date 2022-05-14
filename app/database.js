@@ -4,7 +4,7 @@ const getPosts = function (limit = 0) {
     const db = new sqlite(process.env.BBS_DB, { verbose: console.log, fileMustExist: true });
     let result = [];
     if (limit > 0) {
-        result = db.prepare("SELECT * FROM ( SELECT * FROM messages ORDER BY id DESC LIMIT ? ) ORDER BY date ASC;").all(limit);
+        result = db.prepare("SELECT * FROM ( SELECT * FROM messages ORDER BY id DESC LIMIT ? ) ORDER BY id ASC;").all(limit);
     } else {
         result = db.prepare("SELECT * FROM messages;").all();
     }
