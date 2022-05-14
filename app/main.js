@@ -17,7 +17,7 @@ const mainMenu = (socket) => {
             socket.destroy();
             break;
         case 'help':
-            filesystem.getContent(process.env.BBS_MAIN_HELP, socket)
+            helpMenu(socket);
             bbs.commandPrompt(socket);
             break;
         case 'downloads':
@@ -44,6 +44,11 @@ const mainMenu = (socket) => {
 }
 
 exports.mainMenu = mainMenu;
+
+const helpMenu = (socket) => {
+    filesystem.getContent(process.env.BBS_MAIN_HELP, socket);
+}
+exports.helpMenu = helpMenu;
 
 function chr(code) {
     return filesystem.chr(code);

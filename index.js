@@ -1,5 +1,6 @@
 const net = require("net");
 const bbs = require('./app/bbs');
+const mainMenu = require('./app/main');
 require('dotenv').config();
 
 var PETSCII, decode, encode;
@@ -21,6 +22,7 @@ server.on('connection', (socket) => {
     console.log(`new connection from ${socket.remoteAddress}:${socket.remotePort}`);
     bbs.welcomeScreen(socket);
     bbs.motd(socket);
+    mainMenu.helpMenu(socket);
     bbs.commandPrompt(socket);
 
     socket.on('data', (data) => {

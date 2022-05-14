@@ -4,5 +4,23 @@
     "bell": 7,
     "shift": 14,
     "graphic": 142,
-    "del": 20
+    "del": 20,
+    "colors": {
+        "red": 28,
+        "green": 30,
+        "blue": 31,
+        "orange": 129,
+        "black": 144,
+        "brown": 149,
+        "lightred": 150,
+        "darkgray": 151,
+        "gray": 152,
+        "lightgray": 155,
+        "lightgreen": 153,
+        "lightblue": 154,
+        "purple": 156,
+        "yellow": 158,
+        "cyan": 159,
+        "rvs": 18
+    }
 }
