@@ -29,13 +29,19 @@ exports.main = (socket, data) => {
 }
 
 function processInput(socket, data) {
-    var encodedByte = data.toJSON()['data'][0];
+    let encodedByte = data.toJSON()['data'][0];
+    let bufferByte = "";
+    if (socket.messages.mode === "new" && data.toJSON()['data'][0] != petscii.return) {
+        bufferByte = decode('shifted', data);
+    } else {
+        bufferByte = data.toString();
+    }
     if (encodedByte != petscii.return) {
         if (encodedByte === petscii.del) {
             socket.inputBuffer = socket.inputBuffer.substr(0, socket.inputBuffer.length - 1);
             return;
         } else {
-            return socket.inputBuffer += data.toString();
+            return socket.inputBuffer += bufferByte;
         }
 
     } else {
