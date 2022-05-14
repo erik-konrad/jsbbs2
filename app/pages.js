@@ -4,16 +4,14 @@ var PETSCII, decode, encode;
 
 const petscii = require('../config/petscii.json');
 const filesystem = require('./filesystem');
+const mainMenu = require('./main');
 const bbs = require('./bbs');
 const path = require('path');
 
 const main = function (socket) {
     switch (socket.inputBuffer.toLowerCase()) {
         case 'menu':
-            socket.write(encode('shifted', 'Wechsle ins Hauptmenu') + chr(petscii.return));
-            socket.bbsMode = 'main';
-            bbs.motd(socket);
-            bbs.commandPrompt(socket);
+            mainMenu.home(socket);
             break;
         case 'home':
             socket.pages.path = 'pages';

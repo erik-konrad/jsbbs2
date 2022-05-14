@@ -1,2 +1,4 @@
 node_modules
 .vscode
+SQLite.sql
+test.js

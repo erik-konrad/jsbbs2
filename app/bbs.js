@@ -6,6 +6,7 @@ const petscii = require('../config/petscii.json');
 const main = require('./main');
 const filesystem = require('./filesystem');
 const pages = require('./pages');
+const messages = require('./messages');
 
 exports.welcomeScreen = (socket) => {
     socket.write(chr(petscii.bell));
@@ -44,6 +45,9 @@ function processInput(socket, data) {
                 break;
             case 'pages':
                 pages.main(socket);
+                break;
+            case 'messages':
+                messages.main(socket);
                 break;
             default:
                 break;
