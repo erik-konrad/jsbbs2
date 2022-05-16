@@ -1,0 +1,23 @@
+Hier auf dieser Seite stelle ich die 
+BBS Software genauer vor.
+
+Die Installation von JSBBS2 ist ganz 
+einfach. Man clont oder downloaded 
+sich das Repository von 
+https://github.com/erik-konrad/jsbbs2,
+wechselt in den Ordner ("cd jsbbs2"),
+Installiert die Abhaengigkeiten 
+("npm i") und startet die Mailbox 
+("npm run start").
+
+Nun muesste die Mailbox laufen und 
+unter Port 6464 erreichbar sein.
+
+Wenn du einen anderen Port verwenden 
+willst, kannst du diesen im .env File
+aendern.
+
+Vorraussetzung ist dafuer ausschliess-
+lich node.js ab Version 16. Node.js 
+kann man hier downloaden: 
+https://nodejs.org/en/

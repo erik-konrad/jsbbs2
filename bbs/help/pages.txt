@@ -13,7 +13,7 @@ statischen html - Seiten.
 # MENU - zurueck ins BBS Menu         #
 # . - zeige aktuelle Seite            #
 # .. - eine Seite nach oben           #
-# ls - zeige Inhalt                   #
+# LS - zeige Inhalt                   #
 # HOME - zurueck zur Startseite       #
 # 0 - xx - oeffne Unterseite          #
 # HELP - diese Hilfeseite             #

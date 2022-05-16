@@ -1,7 +1,15 @@
 
-Dies ist eine MOTD (auch Nachricht des
-Tages genannt). Aktuell nur als Platz-
-halter eingefuegt.
+Dieses BBS ist noch Pre - Alpha. Es 
+kann also zu Fehlern kommen. Bitte 
+anschnallen. Ausserdem fehlen noch 
+alle Inhalte und saemtliche SEQ 
+PETSCII Art wurde aus Test- und Prae-
+sentationszwecken von der Kaleidoscope
+4 Diskette genommen.
+
+Informationen wie du diese Software 
+selbst verwenden kannst findest du im
+Pages Modul unter "ueber-jbbs2".
 
 Wenn du neu bist und nicht weiter 
 weisst, gib HELP ein.
