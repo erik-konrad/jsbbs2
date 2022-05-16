@@ -3,6 +3,7 @@ var PETSCII, decode, encode;
 ({ decode, encode } = PETSCII);
 
 const fs = require('fs');
+readline = require('readline');
 const petscii = require('../config/petscii.json');
 const path = require('path');
 
@@ -15,13 +16,20 @@ const getContent = function (file, socket) {
             socket.write(chr(petscii.shift) + chr(petscii.return))
             break;
         default:
-            socket.write(encode('shifted', getFileData(bbsPath, true)) + chr(petscii.return))
+            //socket.write(encode('shifted', getFileData(bbsPath, true)) + chr(petscii.return))
+            getTextFileData(bbsPath, socket);
             break;
 
     }
 }
 
 exports.getContent = getContent;
+
+function getTextFileData(fileName, socket) {
+    fs.readFileSync(fileName, 'utf8').split(/\r?\n/).forEach(function (line) {
+        socket.write(encode('shifted', line) + chr(petscii.return))
+    })
+}
 
 function getFileData(fileName, parsed = false) {
     if (exists(fileName)) {
