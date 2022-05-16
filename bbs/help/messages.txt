@@ -1,2 +1,15 @@
 Das ist die Messages Hilfeseite. Hier
 gibts erstmal noch keinen Content.
+
+############### Hilfe #################
+#                                     #
+# verfuegbare Befehle:                #
+# MENU - zurueck ins BBS Menu         #
+# LIST - Listet alle Eintraege        #
+# LIST 5 - Listet die letzten 5       #
+# NEW - Lege neuen Eintrag an         #
+# USER - zeige Usernamen              #
+# RENAME - aendere Usernamen          #
+# HELP - diese Hilfeseite             #
+#                                     #
+#######################################

@@ -1,5 +1,21 @@
-Das ist die Illusionforge BBS Hilfe-
-seite fuer das Pages Modul.
+Dies ist das Pages Modul. Der Content 
+wird unter "./bbs/pages" abgelegt. 
+Die index.txt in diesem Ordner ist 
+die Startseite. Fuer Unterseiten 
+muessen eigene Ordner hinzu gefueft 
+werden die dann wieder eine index.txt 
+oder index.seq haben. Aehnlich wie bei 
+statischen html - Seiten.
 
-Der Inhalt muss erst noch bearbeitet 
-werden.
+############### Hilfe #################
+#                                     #
+# verfuegbare Befehle:                #
+# MENU - zurueck ins BBS Menu         #
+# . - zeige aktuelle Seite            #
+# .. - eine Seite nach oben           #
+# ls - zeige Inhalt                   #
+# HOME - zurueck zur Startseite       #
+# 0 - xx - oeffne Unterseite          #
+# HELP - diese Hilfeseite             #
+#                                     #
+#######################################

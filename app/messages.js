@@ -94,7 +94,7 @@ function listPosts(socket, limit = 0) {
     limit = parseInt(limit);
     let posts = database.getPosts(limit);
     if (posts.length === 0) {
-        socket.write(encode('shifted', `No Messages in Board`));
+        socket.write(encode('shifted', `No Messages in Board`) + chr(petscii.return));
         return;
     }
     for (let i = 0; i < posts.length; i++) {
